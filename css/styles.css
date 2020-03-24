@@ -1,40 +1,49 @@
-html, body {
+html,
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #EEEEEE;
     height: 100%;
 }
+
+
 /* navbar */
+
 .navbar {
     height: 50px;
     width: 100%;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     align-items: center;
 }
-.log {
-    width: 10px;
-    height: 10px;
-    background-image:url('https://archive.vn/Bss88/51a3832e6af6792add876216da444db23a4bea96.png');
-}
-.navbar, .right-side {
+
+.log {}
+
+.navbar,
+.right-side {
     display: flex;
 }
+
 .right-side {
     margin-left: auto;
 }
-.right-side > div {
+
+.right-side>div {
     margin: 5px;
     padding: 5px;
 }
+
 
 /* end of navbar */
 
 
 /* icon colors */
+
 .gray {
     color: grey;
 }
+
 .red {
     color: red;
 }
+
 
 /* end of icon colors */
