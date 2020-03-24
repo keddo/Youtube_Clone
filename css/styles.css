@@ -81,6 +81,57 @@ form {
 /* end of navbar */
 
 
+/* langauge option */
+.lang-option {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 122, 198);
+    margin: 10px 0;
+    padding: 3px;
+    color: #fff;
+}
+.lang-top {
+    display: flex;
+    padding: 7px;
+}
+.description{
+    background-color: white;
+    color: #000;
+    padding: 20px;
+}
+.lang-top > div {
+    padding: 10px;
+}
+.btn-close {
+    margin-left: auto;
+}
+
+.question-icon {
+    font-size: 11px;
+}
+.help-icon{
+    position: relative;
+}
+sup {
+    position: absolute;
+    bottom: 18px;
+}
+.description {
+    display: flex;
+}
+.text-description a {
+    text-decoration: none;
+    color:  rgb(22, 122, 198);
+}
+.text-learn {
+    margin-left: auto;
+}
+.text-learn a {
+    text-decoration: none;
+    color:  rgb(22, 122, 198);
+}
+/* end of language option */
+
 /* icon colors */
 
 .gray {
