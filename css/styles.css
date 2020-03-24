@@ -1,0 +1,25 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEEEEE;
+    height: 100%;
+}
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    align-items: center;
+}
+.navbar, .right-side {
+    display: flex;
+}
+
+
+/* icon colors */
+.gray {
+    color: gray;
+}
+.red {
+    color: red;
+}
+
+/* end of icon colors */
