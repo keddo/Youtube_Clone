@@ -1,6 +1,6 @@
-# Project Name
+# Embedding Images and Video
 
-> One paragraph statement about the project.
+> This project consists of building an HTML document that matches the appearance of youtube video player page.
 
 ![screenshot](./app_screenshot.png)
 
@@ -24,18 +24,8 @@ Additional description about the project and its features.
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
 ### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+> Clone the project into you directory and open it.
 
 
 ## Authors
