@@ -13,13 +13,19 @@ body {
     width: 100%;
     background-color: rgb(255, 255, 255);
     align-items: center;
+    padding: 8px;
 }
 
 .log {}
 
 .navbar,
-.right-side {
+.right-side,
+.left-side {
     display: flex;
+}
+
+.left-side {
+    align-items: center;
 }
 
 .right-side {
@@ -29,6 +35,46 @@ body {
 .right-side>div {
     margin: 5px;
     padding: 5px;
+}
+
+.left-side>div {
+    margin: 10px;
+    padding: 5px;
+}
+
+.form-group {
+    position: relative;
+    left: 300px;
+}
+
+.input-form {
+    width: 500px;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.signin-btn {
+    border: none;
+    padding: 7px;
+    background: rgb(22, 122, 198);
+    font-size: 12px;
+    color: white;
+    margin: 0 10px 0 0;
+}
+
+.btn-search {
+    border: none;
+    padding: 14px 20px;
+    background-color: #eee;
+    border-radius: 6px;
 }
 
 
