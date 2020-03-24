@@ -3,20 +3,35 @@ html, body {
     background-color: #EEEEEE;
     height: 100%;
 }
+/* navbar */
 .navbar {
     height: 50px;
     width: 100%;
     background-color:rgb(255, 255, 255);
     align-items: center;
 }
+.log {
+    width: 10px;
+    height: 10px;
+    background-image:url('https://archive.vn/Bss88/51a3832e6af6792add876216da444db23a4bea96.png');
+}
 .navbar, .right-side {
     display: flex;
 }
+.right-side {
+    margin-left: auto;
+}
+.right-side > div {
+    margin: 5px;
+    padding: 5px;
+}
+
+/* end of navbar */
 
 
 /* icon colors */
 .gray {
-    color: gray;
+    color: grey;
 }
 .red {
     color: red;
