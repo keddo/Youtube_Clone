@@ -263,7 +263,49 @@ sup {
 .side-bar {
     grid-column: 2/3;
     background-color: white;
+    padding: 17px;
 }
+.sidebar-actions {
+    display: flex;
+}
+.sidebar-actions div.icon-group {
+    margin-left: auto;
+}
+div.icon-group span {
+    padding: 7px;
+    color: gray;
+}
+div.icon-group span.toggle-icon {
+    color: rgb(22, 122, 198);
+    font-size: 1.5rem;
+}
+.thumbnail-block {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+.thumbnail-block > div {
+    padding: 9px;
+}
+.thumbnail-block h4 {
+    margin-top: 7px;
+    font-size: 12px;
+}
+h1.thumbnail-title {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+}
+.thumbnail-block p {
+    padding: 7px;
+    color: gray;
+    font-size: 12px;
+}
+.thumbnail-block img {
+    border: 1px solid #ddd;
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px;
+}
+
 /* end of aside */
 
 /* footer */
