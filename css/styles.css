@@ -4,19 +4,24 @@ body {
     background-color: #EEEEEE;
     height: 100%;
 }
+/* container */
+.container {
+    display: grid;
+    grid-template: 50px 150px  auto 80px / 2fr 1fr;
+    grid-gap: 5px;
+}
 
+/* end of container */
 
 /* navbar */
 
 .navbar {
-    height: 50px;
+    grid-column: 1/3;
     width: 100%;
     background-color: rgb(255, 255, 255);
     align-items: center;
     padding: 8px;
 }
-
-.log {}
 
 .navbar,
 .right-side,
@@ -85,9 +90,9 @@ form {
 .lang-option {
     display: flex;
     flex-direction: column;
+    grid-column: 1/3;
     background-color: rgb(22, 122, 198);
-    margin: 10px 0;
-    padding: 3px;
+    margin: 12px 0;
     color: #fff;
 }
 .lang-top {
@@ -97,7 +102,7 @@ form {
 .description{
     background-color: white;
     color: #000;
-    padding: 20px;
+    padding: 28px;
 }
 .lang-top > div {
     padding: 10px;
@@ -127,10 +132,146 @@ sup {
     margin-left: auto;
 }
 .text-learn a {
+    font-size: 10px;
     text-decoration: none;
     color:  rgb(22, 122, 198);
 }
 /* end of language option */
+
+
+/* main body */
+  .main-body {
+      display: flex;
+      flex-direction: column;
+      grid-column: 1/2;
+  }
+
+/* video descripiton */
+ .video-description {
+     display: flex;
+     flex-direction: column;
+     background-color: #fff;
+     padding: 16px;
+     margin: 7px 0;
+     box-shadow: 1px 2px #ddd;
+ }
+ .vedio-reaction {
+     display: flex;
+ }
+ #subscribe-group {
+     display: flex;
+     flex-direction: column;
+     padding: 7px;
+ }
+ .video-description div.youtube-views{
+     margin-left: auto;
+     align-self: flex-end;
+ }
+ .video-description .video-action {
+     display: flex;
+ }
+ .like-dislike {
+     margin-left: auto;
+     display: flex;
+     align-items: flex-end;
+ }
+ .like-dislike p {
+     padding: 8px;
+ }
+ .video-description h1 {
+     padding: 15px;
+     font-size: 1.2rem;
+     font-weight: 450;
+ }
+ .video-description img {
+     padding: 7px;
+ }
+ #subscribe-group > h4, #subscribe-group > div{
+     margin-bottom: 10px;
+ }
+ h4.channel-name{
+     color: rgba(0,0, 0, 0.8);
+     font-weight: 400;
+ }
+ .subscribe-icon {
+     position: relative;
+     padding: 4px;
+     border: none;
+     border-top-left-radius: 3px;
+     border-bottom-left-radius: 3px;
+     background-color: red;
+     color: white;
+ }
+ .subscribe-icon > span{
+     font-size: 12px;
+     padding-bottom: 5px;
+ }
+ .subscrible-counter {
+     height: 100%;
+     background-color: rgba(255, 255, 255, 0.5);
+     font-size: 12px;
+     color: gray;
+     border: 1px solid #ddd;
+     padding: 6px;
+     border-top-right-radius: 3px;
+     border-bottom-right-radius: 3px;
+     position: relative;
+     bottom: 1px;
+ }
+ .video-action {
+     border-top: 1px solid #ddd;
+ }
+ .youtube-views {
+     padding: 10px;
+     font-size: 1.1rem;
+     color: gray;
+     border-bottom:2px solid rgb(22, 122, 198);
+ }
+ .video-action > div {
+     padding: 12px;
+ }
+
+ .video-description > h3, .video-description > h3{
+     padding: 9px;
+ }
+ .video-description h3 {
+     font-size: 0.9rem;
+     font-weight: 400;
+ }
+ .video-description p {
+     line-height: 17px;
+     font-size: 0.8rem;
+ }
+ .show-more {
+     margin-top: 15px;
+     padding: 9px;
+     text-align: center;
+     border-top: 1px solid #ddd;
+ }
+.show-more a {
+    color: gray;
+    text-decoration: none;
+}
+/* end of video discription */
+
+
+
+
+/* end of main body */
+
+/* aside */
+.side-bar {
+    grid-column: 2/3;
+    background-color: white;
+}
+/* end of aside */
+
+/* footer */
+.footer {
+    grid-column: 1/3;
+    background-color: white;;
+}
+/* end of footer */
 
 /* icon colors */
 
@@ -141,6 +282,8 @@ sup {
 .red {
     color: red;
 }
-
+.white {
+    color: white;
+}
 
 /* end of icon colors */
