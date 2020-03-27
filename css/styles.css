@@ -154,6 +154,7 @@ sup {
       flex-direction: column;
       grid-column: 1/2;
   }
+
 #country-abbr {
     position: relative;
     top: -20px;
@@ -258,19 +259,22 @@ sup {
      font-size: 0.9rem;
      font-weight: 400;
  }
+ .video-description p.show-more {
+    border-top: 1px solid #ddd;
+ }
  .video-description p {
      line-height: 17px;
      font-size: 0.8rem;
  }
  .show-more {
-     margin-top: 15px;
+     margin-top: 20px;
      padding: 9px;
      text-align: center;
-     border-top: 1px solid #ddd;
  }
 .show-more a {
     color: gray;
     text-decoration: none;
+    text-transform: uppercase;
 }
 /* end of video discription */
 
@@ -284,8 +288,9 @@ sup {
 /* aside */
 .side-bar {
     grid-column: 2/3;
+    flex-wrap: wrap;
     background-color: white;
-    padding: 17px;
+    padding: 5px;
 }
 .sidebar-actions {
     display: flex;
@@ -327,7 +332,10 @@ h1.thumbnail-title {
     border-radius: 4px;  /* Rounded border */
     padding: 5px;
 }
-
+.side-bar p {
+    line-height: 17px;
+    font-size: 0.8rem;
+}
 /* end of aside */
 
 
@@ -336,7 +344,7 @@ h1.thumbnail-title {
 .footer {
     grid-column: 1/3;
     background-color: white;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 footer #top{
     display: flex;
@@ -360,7 +368,7 @@ footer #top{
   padding: 0 5px;
 }
 footer #bottom {
-    padding: 10px;
+    padding: 20px;
     margin: 0 12px;
 
 }
@@ -376,7 +384,7 @@ ul li a {
 }
 #setting li a {
     color: gray;
-    font-size: 10px;
+    font-size: 12px;
 }
 /* end of footer */
 
