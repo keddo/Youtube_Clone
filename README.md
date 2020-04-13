@@ -13,7 +13,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+ [Go to Live Demo](https://calm-inlet-07376.herokuapp.com/)
 
 
 ## Getting Started
