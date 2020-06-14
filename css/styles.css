@@ -1,40 +1,438 @@
-html, body {
+html,
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #EEEEEE;
+    overflow-x: hidden;
+    width: 100%;
     height: 100%;
 }
-/* navbar */
-.navbar {
-    height: 50px;
+/* container */
+.container {
     width: 100%;
-    background-color:rgb(255, 255, 255);
+    display: grid;
+    flex-wrap: wrap;
+    grid-template: 50px 150px  auto auto / 2fr 1fr;
+    grid-gap: 5px;
+}
+
+/* end of container */
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    grid-column: 1/3;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
     align-items: center;
+    padding: 22px;
 }
-.log {
-    width: 10px;
-    height: 10px;
-    background-image:url('https://archive.vn/Bss88/51a3832e6af6792add876216da444db23a4bea96.png');
-}
-.navbar, .right-side {
+
+.navbar,
+.right-side,
+.left-side {
     display: flex;
 }
+
+.left-side {
+    align-items: center;
+}
+
 .right-side {
     margin-left: auto;
 }
-.right-side > div {
+
+.right-side>div {
     margin: 5px;
     padding: 5px;
 }
 
+.left-side>div {
+    margin: 10px;
+    padding: 5px;
+}
+
+.form-group {
+    position: relative;
+    left: 300px;
+}
+
+.input-form {
+    width: 500px;
+    padding: 9px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.signin-btn {
+    border: none;
+    padding: 7px;
+    background: rgb(22, 122, 198);
+    font-size: 12px;
+    color: white;
+    margin: 0 10px 0 0;
+}
+
+.btn-search {
+    border: none;
+    padding: 8px 20px;
+    background-color: #eee;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #ccc;
+}
+form a {
+    text-decoration: none;
+    color: black;
+}
+.input-form:hover{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
 /* end of navbar */
 
 
+/* langauge option */
+.lang-option {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    grid-column: 1/3;
+    background-color: rgb(22, 122, 198);
+    margin: 12px 0;
+    color: #fff;
+}
+.lang-top {
+    display: flex;
+    padding: 7px;
+}
+.description{
+    background-color: white;
+    color: #000;
+    padding: 28px;
+}
+.lang-top > div {
+    padding: 10px;
+}
+.btn-close {
+    margin-left: auto;
+}
+
+.question-icon {
+    font-size: 11px;
+}
+.help-icon{
+    position: relative;
+}
+sup {
+    position: absolute;
+    bottom: 18px;
+}
+.description {
+    display: flex;
+}
+.text-description a {
+    text-decoration: none;
+    color:  rgb(22, 122, 198);
+}
+.text-learn {
+    margin-left: auto;
+}
+.text-learn a {
+    font-size: 10px;
+    text-decoration: none;
+    color:  rgb(22, 122, 198);
+}
+/* end of language option */
+
+
+/* main body */
+  .main-body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      grid-column: 1/2;
+  }
+
+#country-abbr {
+    position: relative;
+    top: -20px;
+    color: gray;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.video-embed {
+    background-color: white;
+}
+/* video descripiton */
+ .video-description {
+     display: flex;
+     flex-direction: column;
+     background-color: #fff;
+     padding: 16px;
+     margin: 7px 0;
+     box-shadow: 1px 2px #ddd;
+ }
+ .video-description img.avatar {
+     border-radius: 50%;
+ }
+ .vedio-reaction {
+     display: flex;
+ }
+ #subscribe-group {
+     display: flex;
+     flex-direction: column;
+     padding: 7px;
+ }
+ button.btn-subscribe {
+     padding: 5px 0;
+     border: none;
+ }
+ .video-description div.youtube-views{
+     margin-left: auto;
+     align-self: flex-end;
+ }
+ .video-description .video-action {
+     display: flex;
+ }
+ .like-dislike {
+     margin-left: auto;
+     display: flex;
+     align-items: flex-end;
+ }
+ .like-dislike p {
+     padding: 8px;
+ }
+ .video-description h1 {
+     padding: 15px;
+     font-size: 1.2rem;
+     font-weight: 450;
+ }
+ .video-description img {
+     padding: 7px;
+ }
+ #subscribe-group > h4, #subscribe-group > div{
+     margin-bottom: 10px;
+ }
+ h4.channel-name{
+     color: rgba(0,0, 0, 0.8);
+     font-weight: 400;
+ }
+ .subscribe-icon {
+     position: relative;
+     padding: 4px;
+     border: none;
+     border-top-left-radius: 3px;
+     border-bottom-left-radius: 3px;
+     background-color: red;
+     color: white;
+ }
+ .subscribe-icon > span{
+     font-size: 12px;
+     padding-bottom: 50px;
+ }
+ .subscrible-counter {
+     height: 100%;
+     background-color: rgba(255, 255, 255, 0.5);
+     font-size: 12px;
+     color: gray;
+     border: 1px solid #ddd;
+     padding: 4px 6px;
+     border-top-right-radius: 3px;
+     border-bottom-right-radius: 3px;
+     position: relative;
+     bottom: 1px;
+ }
+ .video-action {
+     border-top: 1px solid #ddd;
+ }
+ .video-action > div > span{
+     font-size: 12px;
+     padding-left: 7px;
+ }
+ .video-action .btn-share ,
+  .video-action .btn-addto,
+  .video-action .btn-more,
+  .like-dislike button
+  {
+     border: none;
+     background-color: white;
+ }
+ .youtube-views {
+     padding: 10px;
+     font-size: 1.1rem;
+     color: gray;
+     border-bottom:2px solid rgb(22, 122, 198);
+ }
+ .video-action > div {
+     padding: 12px;
+ }
+
+ .video-description > h3, .video-description > h3{
+     padding: 9px;
+ }
+ .video-description h3 {
+     font-size: 0.9rem;
+     font-weight: 400;
+ }
+ .video-description p.show-more {
+    border-top: 1px solid #ddd;
+ }
+ .video-description p {
+     line-height: 17px;
+     font-size: 0.8rem;
+ }
+ .show-more {
+     margin-top: 20px;
+     padding: 9px;
+     text-align: center;
+ }
+.show-more a {
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* end of video discription */
+
+
+
+
+/* end of main body */
+
+
+
+/* aside */
+.side-bar {
+    grid-column: 2/3;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 5px;
+}
+.sidebar-actions {
+    display: flex;
+}
+.sidebar-actions div.icon-group {
+    margin-left: auto;
+}
+div.icon-group span {
+    padding: 7px;
+    color: gray;
+}
+div.icon-group span.toggle-icon {
+    color: rgb(22, 122, 198);
+    font-size: 1.5rem;
+}
+.thumbnail-block {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+.thumbnail-block > div {
+    padding: 9px;
+}
+.thumbnail-block h4 {
+    margin-top: 7px;
+    font-size: 12px;
+}
+h1.thumbnail-title {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+}
+.thumbnail-block p {
+    padding: 7px;
+    color: gray;
+    font-size: 12px;
+}
+.thumbnail-block img {
+    border: 1px solid #ddd;
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px;
+}
+.side-bar p {
+    line-height: 17px;
+    font-size: 0.8rem;
+}
+/* end of aside */
+
+
+
+/* footer */
+.footer {
+    width: 100%;
+    grid-column: 1/3;
+    background-color: white;
+    margin-bottom: 50px;
+}
+footer #top{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 12px;
+}
+#top > div , #top >img {
+    margin-left: 25px;
+}
+#top div > button {
+        padding: 7px 7px;
+        margin-bottom: 12px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #f2f2f2;
+}
+.pl-space {
+  padding: 0 5px;
+}
+footer #bottom {
+    padding: 20px;
+    margin: 0 12px;
+
+}
+#bottom ul li {
+    display: inline-block;
+    padding: 10px;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(0,0,0,0.9);
+    font-weight: bold;
+}
+#setting li a {
+    color: gray;
+    font-size: 12px;
+}
+/* end of footer */
+
+
+/* common css */
+input[type=text], 
+button {
+    cursor: pointer;
+}
+/* end of common css */
+
 /* icon colors */
+
 .gray {
     color: grey;
 }
+
 .red {
     color: red;
+}
+.white {
+    color: white;
 }
 
 /* end of icon colors */

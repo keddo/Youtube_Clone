@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,71 +10,226 @@
     <link rel="stylesheet" href="css/css-reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <!-- container -->
     <div class="container">
-            <!-- Navbar -->
-            <nav class="navbar">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="left-side">
+
                 <div class="hamburger-icon">
-                   <a href="#"><i class="fas fa-bars fa-2x gray"></i></a>
+                    <a href="#"><i class="fas fa-bars gray"></i></a>
                 </div>
                 <div class="log">
-                    <img src="img/logo.png" alt="Youtube log" width="80" height="40">
+                    <img src="img/logo.png" alt="Youtube log" width="80" height="30">
+                    <sup id="country-abbr">nl</sup>
                 </div>
                 <div class="form-group">
                     <form>
-                        <input type="text" class="input-form">
-                        <button type="submit"><i class="fas fa-search"></i></button>
+                        <input type="text" class="input-form" placeholder="Search">
+                        <a href="#" class="btn-search"><i class="fas fa-search gray"></i></a>
                     </form>
                 </div>
-                <div class="right-side">
-                    <div class="upload-btn">
-                        <i class="fas fa-arrow-circle-up"></i>
-                    </div>
-                    <div class="btn-blue">
-                        <button class="signin-btn" type="button">Signin</button>
-                    </div>
-                </div>
-            </nav>
-            <!-- End Navbar -->
-             <!-- Change language section -->
-            <div class="lang-option">
-                
+
             </div>
-             <!-- End of Change language section -->
-           
-            <!-- main body -->
-            <main class="main-body">
-                <div class="video-player">
-                
+
+
+            <div class="right-side">
+                <div class="youtube-apps">
+                    <i class="fas fa-th gray"></i>
                 </div>
-                <div class="video-description">
-
+                <div class="upload-btn">
+                    <i class="fas fa-arrow-circle-up gray"></i>
                 </div>
-            </main>
-            <!-- end of main body -->
-
-
-            <!-- aside -->
-            <aside class="side-bar">
-
-            </aside>
-            <!-- end of aside -->
-
-
-
-            <!-- footer  -->
-            <footer class="footer">
-                
-            </footer>
-            <!-- end of footer  -->
+                <div class="notification">
+                    <i class="fas fa-bell gray"></i>
+                </div>
+                <div class="btn-blue">
+                    <button class="signin-btn" type="button">Signin</button>
+                </div>
             </div>
-            
+        </nav>
+        <!-- End Navbar -->
+        <!-- Change language section -->
+        <div class="lang-option">
+          <div class="lang-top">
+                <div class="help-icon">
+                    <i class="fas fa-user-alt"></i>
+                    <sup><i class="fas fa-question-circle question-icon"></i></sup>
+                </div>
+                <div class="lang-option-text">
+                    <span>Choose your language</span>
+                </div>
+                <div class="btn-close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+            </div>
+            <div class="description">
+                <div class="text-description">
+                    You're viewing YouTube in English (US). You can <a href="#">change this preference below</a>.
+                </div>
+                <div class="text-learn">
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+        <!-- End of Change language section -->
+
+        <!-- main body -->
+        <main class="main-body">
+            <div class="video-embed">
+               <div class="video-player">
+                <iframe width="850" height="478" src="https://www.youtube.com/embed/V74l_zS1x8E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+            </div>
+            <div class="video-description">
+               <h1 class="video-title">Contributing to Open Source Part I: The Easy Way</h1>
+               <div class="vedio-reaction">
+                 <img src="img/profile-avatar.png" alt="User profile" class="avatar" width="60" height="60" >
+                  <div id="subscribe-group">
+                    <h4 class="channel-name">The odin project</h4>
+                    <button class="btn-subscribe">
+                        <span class="subscribe-icon">
+                            <i class="fab fa-youtube"></i>
+                              <span>subscribe</span>
+                        </span>
+                        <span class="subscrible-counter">799</span>
+                    </button>
+                 </div>
+                 <div class="youtube-views">
+                     <p>22,245 <span class="text-view">views</span></p>
+                 </div>
+               </div>
+               <div class="video-action">
+                  <button class="btn-addto gray">
+                    <i class="fas fa-plus"></i>
+                    <span>Add to</span>
+                  </button>
+                   <button class="btn-share gray">
+                    <i class="fas fa-share"></i>
+                    <span>Share</span>
+                   </button>
+                   <button class="btn-more gray">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <span>more</span>
+                   </button>
+                   <div class="like-dislike">
+                     <button class="gray">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>25</span>
+                     </button>
+                     <button class="gray">
+                        <i class="fas fa-thumbs-down"></i>
+                        <span>6</span>
+                     </button>
+                 </div>   
+                   
+               </div>
+            </div>
+            <div class="video-description">
+               <h3 class="video-publish-date">Published on Feb 27, 2014</h3>
+               <p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at http://theodinproject.com.</p>
+               <p class="show-more"><a href="#">show more</a></p>
+            </div>
+        </main>
+        <!-- end of main body -->
+
+
+        <!-- aside -->
+        <aside class="side-bar">
+           <div class="sidebar-actions">
+               <span class="up-next">Up next</span>
+               <div class="icon-group">
+                   <span class="auto-play">Autoplay</span>
+                   <span class="caution"><i class="fas fa-exclamation-circle"></i></span>
+                   <span class="toggle-icon"><i class="fas fa-toggle-on"></i></span>
+               </div>
+           </div>
+           <div class="thumbnail-block">
+               <img src="img/thumbnail-1.jpg" alt="thumbnail image 1" width="180" height="150">
+               <div>
+                 <h2 class="thumbnail-title">Contributing to Open Source Part II: The Easy Way</h2>
+                 <h4 class="channel-name">The odin project</h4>
+                 <p>45,245 <span class="text-view">views</span></p>
+               </div>
+           </div>
+           <div class="thumbnail-block">
+            <img src="img/thumbnail-2.jpg" alt="thumbnail image 2" width="180" height="150">
+            <div>
+              <h2 class="thumbnail-title">'How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft' by Sean Lee</h2>
+              <h4 class="channel-name">SJ Tech</h4>
+              <p>1,128,784 <span class="text-view">views</span></p>
+            </div>
+        </div>
+        <div class="thumbnail-block">
+            <img src="img/thumbnail-3.jpg" alt="thumbnail image 3" width="180" height="150">
+            <div>
+              <h2 class="thumbnail-title">REST API concepts and examples</h2>
+              <h4 class="channel-name">WebConcepts</h4>
+              <p>2,197,769 <span class="text-view">views</span></p>
+            </div>
+        </div>
+        <div class="thumbnail-block">
+            <img src="img/thumbnail-4.jpg" alt="thumbnail image 4" width="180" height="150">
+            <div>
+              <h2 class="thumbnail-title">GitHub - Why Microsoft Paid $7.5B for the Future of Software! - A Case Study for Entrepreneurs</h2>
+              <h4 class="channel-name">Valuetainment</h4>
+              <p>278,771 <span class="text-view">views</span></p>
+            </div>
+        </div>
+         <p class="show-more"><a href="#">show more</a></p>
+        </aside>
+        <!-- end of aside -->
+
+
+
+        <!-- footer  -->
+        <footer class="footer">
+           <div id="top">
+              <img src="img/logo.png" alt="Youtube log" width="80" height="30">
+               <div>
+                   <button>
+                    <i class="fas fa-user-alt gray pl-space"></i>
+                    <span class="gray pl-space">Language:</span>English <i class="fas fa-caret-down pl-space"></i>
+                   </button>
+               </div>
+               <div>
+                <button >
+                   <span class="gray pl-space">Location:</span>Netherlands<i class="fas fa-caret-down pl-space"></i>
+                </button>
+               </div>
+               <div>
+                <button>
+                <span class="gray pl-space">Rescricted Mode:</span>Off <i class="fas fa-caret-down pl-space"></i>
+                </button>
+               </div>
+
+                <div>
+                    <button><i class="fas fa-hourglass-end gray pl-space"></i> History</button>
+                    <button><i class="fas fa-question-circle gray pl-space"></i> help</button>
+                </div>
+           </div>
+           <div id="bottom">
+               <ul>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Press</a></li>
+                   <li><a href="#">Copyright</a></li>
+                   <li><a href="#">Creators</a></li>
+                   <li><a href="#">Advertise</a></li>
+                   <li><a href="#">Developers</a></li>
+               </ul>
+               <ul  id="setting">
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Policy & Saftey</a></li>
+                <li><a href="#">Test new features</a></li>
+             </ul>
+           </div>
+        </footer>
+        <!-- end of footer  -->
     </div>
-   <!-- end of container -->
-
-
-    <!-- scripts -->
-    <!-- <script  data-search-pseudo-elements defer src="https://use.fontawesome.com/a364a47ab7.js"></script> -->
+    <!-- end of container -->
 </body>
+
 </html>
